@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prihlásenie</title>
+<script>
+  function overPrihlasenie() {
+    // Tu by ste mali overiť prihlasovacie údaje, napríklad odoslať na server
+    // Na demonštraciu len zobrazíme správu
+    alert("Prihlásenie bolo úspešné!");
+  }
+</script>
+</head>
+<body>
+
+<h2>Prihlásenie</h2>
+
+<form onsubmit="event.preventDefault(); overPrihlasenie();">
+  <div>
+    <label for="prihlasovacieMeno">Prihlasovacie meno:</label>
+    <input type="text" id="prihlasovacieMeno" name="prihlasovacieMeno">
+  </div>
+  <div>
+    <label for="heslo">Heslo:</label>
+    <input type="password" id="heslo" name="heslo">
+  </div>
+  <div>
+    <button type="submit">Prihlásiť sa</button>
+  </div>
+</form>
+
+</body>
+</html>
