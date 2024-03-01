@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help Forum</title>
+<script>
+  // Funkcia na vymazanie textu z textového poľa
+  function poslatSpravu() {
+    // Vynulovanie hodnoty textového poľa
+    document.getElementById('spravaText').value = '';
+    // Prípadne tu môžete pridať kód na odoslanie správy na server alebo do iného komponentu
+    alert("Vaša správa bola odoslaná."); // Len na demonštráciu
+  }
+</script>
+</head>
+<body>
+
+<h2>Help Forum</h2>
+
+<form onsubmit="event.preventDefault(); poslatSpravu();">
+  <label for="spravaText">Vaša správa:</label><br>
+  <textarea id="spravaText" name="spravaText" rows="4" cols="50"></textarea><br>
+  <input type="submit" value="Poslať">
+</form>
+
+</body>
+</html>
