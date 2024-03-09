@@ -5,12 +5,14 @@
 
 <body>
 <h1> P24MIS projekt </h1>
+  <div class="topnav">
   <button><a href= prihlasenie.html> prihlasenie </a></button>
   <button><a href= Sprava.html> napísať otázku </a></button>
   <button><a href= Tvorcovia.html>Tvorcovia</a></button>
+  </div>
 
   <article>
-  <pre>
+  
     Help Forum Baklan predstavuje inovatívnu online platformu určenú pre širokú komunitu používateľov,
     ktorí hľadajú pomoc, rady alebo odpovede na otázky z rôznych akademických a vedeckých oblastí, 
     vrátane matematiky, informatiky, biológie, chémie a ďalších disciplín. 
@@ -20,8 +22,10 @@
     
     Platforma umožňuje užívateľom klásť otázky,
     na ktoré odpovedajú experti alebo iní členovia komunity s príslušnými vedomosťami a skúsenosťami. 
+    <div class = "logoPozadie">
     <img src="Logá/logo.png">
-  </pre>
+      </div>
+  
   </article>
   
 <p> Baklan - vzdialená dopomoc</p>
@@ -46,6 +50,31 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+
+    /* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
 }
   </style>
 </html>
