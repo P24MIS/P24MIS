@@ -1,37 +1,121 @@
 <html>
 <head>
-<title>Help Forum Baklan </title></title>
-<link rel="mLogo.png" type="Logá/mLogo.png" href=""Logá/mLogo.png" style="width:16px;height:16px">
+<title>Help Forum Baklan </title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="keywords" content="Management Project">
+  <meta name="description" content="School project about help forum">
+  <meta name="coder" content="Michal">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="mLogo.png" type="Logá/baklan.png" href="Logá/baklan.png" style="width:16px;height:16px">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="script.js"></script>
 </head>
-
 <body>
+  <div class="Logo">
+    <h1 class="Logo-napis">HELP FORUM BAKLAN</h1>
+    <img src="Logá/baklan.png" alt="Logo" class="imageLogo" width="300" height="300">
+  </div>
+
+
+  <div class="makers">
+    <div class="container">
+      <img src="Avatary/Lukáš.png" alt="Avatar" class="image" width="300" height="300">
+      <div class="meno">
+        <div class="text">Lukáš</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="Avatary/Michal.png" alt="Avatar" class="image" width="300" height="300">
+      <div class="meno">
+        <div class="text">Michal</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="Avatary/Dmytro.png" alt="Avatar" class="image" width="300" height="300">
+      <div class="meno">
+        <div class="text">Dmytro</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="Avatary/Rustam.png" alt="Avatar" class="image" width="300" height="300">
+      <div class="meno">
+        <div class="text">Rustam</div>
+      </div>
+  </div>
+  </div>
+
+
+
+
+
+
   <div class="topnav">
     <div class="mLogo">
-  <img src="Logá/mLogo.png" alt="mLogo" style="width:32px;height:32px">
+  <img src="Logá/baklan.png" alt="baklan" style="width:46px;height:46px">
     </div>
     <div class="signUp">
   <a href= prihlasenie.html class="button"> Prihlasenie </a>
       </div>
   <a href= Sprava.html class="button"> Napísať otázku </a>
   <a href= Recenzie.html class="button"> Recenzie</a>
-  <a href= Tvorcovia.html class="button">Tvorcovia</a>
   </div>
 
-  <article>
-  
+
+<div class="navDatum">
+  <p id="date-time"></p>
+  <script>
+    var updateTime = setInterval(function() {
+    var date = new Date();
+    document.getElementById("date-time").innerHTML = "Dnešný deň a čas: " + date.toLocaleString();
+    }, 1000);
+  </script>
+</div>
+
+
+
+    <table class="otazky">
+      <tr>
+        <th>Meno</th>
+        <th>Otázka</th>
+        <th>Čas pridania</th>
+      </tr>
+      <tr>
+        <td>Janko Mrkvička</td>
+        <td>Mám problém s optimalizáciou algoritmu pre spracovanie prirodzeného jazyka. Môžete mi odporučiť nejaké techniky alebo nástroje, ktoré by mi pomohli zlepšiť jeho výkon?</td>
+        <td>12.2.2024 01:24</td>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>Snažím sa vyriešiť komplexnú sústavu diferenciálnych rovníc. Existuje numerická metóda, ktorá by bola pre tento typ úlohy vhodná?</td>
+        <td>11.1.2024 05:18</td>
+      </tr>
+      <tr>
+        <td>Jane Doe</td>
+        <td>Potrebujem syntetizovať zlúčeninu s určitými vlastnosťami. Existuje nejaký známy postup, ktorý by som mohol použiť, alebo by som mal navrhnúť vlastnú syntézu?</td>
+        <td>01.4.2024 08:01</td>
+      </tr>
+    </table>
+
+
+
+
+  <article class="Description">
+  <p>
     Help Forum Baklan predstavuje inovatívnu online platformu určenú pre širokú komunitu používateľov,
     ktorí hľadajú pomoc, rady alebo odpovede na otázky z rôznych akademických a vedeckých oblastí, 
-    vrátane matematiky, informatiky, biológie, chémie a ďalších disciplín. 
-    
+    vrátane matematiky, informatiky, biológie, chémie a ďalších disciplín.
+  </p>
+    <p>
     Cieľom fóra je poskytnúť priestor pre vzájomnú podporu,
     výmenu znalostí a spoluprácu medzi jednotlivcami s rôznymi stupňami odbornosti a záujmov.
-    
+    </p>
+    <p>
     Platforma umožňuje užívateľom klásť otázky,
-    na ktoré odpovedajú experti alebo iní členovia komunity s príslušnými vedomosťami a skúsenosťami. 
-    <div class = "logoPozadie">
-    <img src="Logá/logo.png">
-      </div>
-  
+    na ktoré odpovedajú experti alebo iní členovia komunity s príslušnými vedomosťami a skúsenosťami.
+    </p>
   </article>
   
 <p> Baklan - vzdialená dopomoc</p>
@@ -42,56 +126,4 @@
     v rámci svojich odborných alebo záujmových oblastí.
 </article>
   </body>
-
-  <style>
-    body {
-  background-color: white;
-}
-    .button {
-  background-color: #FFA500; /* Oranžová */
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-    .mLogo {
-           float: left;
-      text-align: left;
-    }
-    
-    .signUp {
-      float: right;
-      text-align: right;
-    }
-    
-
-
-    /* The navbar container */
-.topnav {
-  overflow: hidden;
-  background-color: lightblue;
-}
-
-/* Navbar links */
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-  </style>
 </html>
