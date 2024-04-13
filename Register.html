@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Help Forum Baklan </title>
+        <link rel="baklan.png" type="Logá/baklan.png" href="Logá/baklan.png" style="width:16px;height:16px">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+
+<body>
+<div class="topnav">
+    <div class="mLogo">
+        <img src="Logá/baklan.png" alt="baklan" style="width:45px;height:45px">
+    </div>
+    <a href= index.html class="button">Späť</a>
+</div>
+
+<h2>Prihlásenie</h2>
+
+<form onsubmit="event.preventDefault(); overPrihlasenie();">
+    <div>
+        <label for="prihlasovacieMeno">Prihlasovacie meno:</label>
+        <input type="text" id="prihlasovacieMeno" name="prihlasovacieMeno">
+    </div>
+    <div>
+        <label for="heslo">Heslo:</label>
+        <input type="password" id="heslo" name="heslo">
+    </div>
+    <div>
+        <label for="heslo">Heslo znova:</label>
+        <input type="password" id="heslo" name="heslo">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </div>
+
+    <div>
+        <button type="submit" class="button">Registruj sa</button>
+    </div>
+</form>
+
+</body>
+</html>

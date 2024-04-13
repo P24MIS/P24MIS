@@ -5,39 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <title>Help Forum Baklan </title></title>
-<link rel="mLogo.png" type="Logá/mLogo.png" href=""Logá/mLogo.png" style="width:16px;height:16px">
+<link rel="mLogo.png" type="Logá/mLogo.png" href=Logá/mLogo.png" style="width:16px;height:16px">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="script.js"></script>
 </head>
 
 <body>
   <div class="topnav">
     <div class="mLogo">
-  <img src="Logá/mLogo.png" alt="mLogo" style="width:32px;height:32px">
+      <img src="Logá/baklan.png" alt="baklan" style="width:46px;height:46px">
     </div>
     <div class="signUp">
   <a href= prihlasenie.html class="button"> Prihlasenie </a>
       </div>
   <a href= index.html class="button">Späť</a>
   </div>
-  
-<script>
-  // Funkcia na vymazanie textu z textového poľa
-  function poslatSpravu() {
-    // Vynulovanie hodnoty textového poľa
-    document.getElementById('spravaText').value = '';
-    // Prípadne tu môžete pridať kód na odoslanie správy na server alebo do iného komponentu
-    alert("Vaša správa bola odoslaná."); // Len na demonštráciu
-  }
-</script>
-</head>
-<body>
 
 <h2>Help Forum</h2>
 
 <form onsubmit="event.preventDefault(); poslatSpravu();">
   <label for="spravaText">Vaša správa:</label><br>
-  <textarea id="spravaText" name="spravaText" rows="4" cols="50"></textarea><br>
-  <input type="submit" value="Poslať">
+  <textarea id="spravaText" name="spravaText" rows="4" cols="50" class="sprava"></textarea><br>
+  <input type="submit" value="Poslať"  class="button">
 </form>
-  <p> <a href= index.html>Späť</a></p>
 </body>
 </html>
