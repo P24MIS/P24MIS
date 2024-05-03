@@ -24,6 +24,15 @@
 <h2>Help Forum</h2>
 
 <form onsubmit="event.preventDefault(); poslatSpravu();">
+  <p class="Oblasť">Vedecká oblasť</p>
+  <select class="Departement" name="Departement" size="2">
+    <option value="Všeobecné">Všeobecné</option>
+    <option value="Matematika">Matematika</option>
+    <option value="Fyzika">Fyzika</option>
+    <option value="Informatika">Informatika</option>
+    <option value="Chémia">Chémia</option>
+  </select>
+  <p></p>
   <label for="spravaText">Vaša správa:</label><br>
   <textarea id="spravaText" name="spravaText" rows="4" cols="50" class="sprava"></textarea><br>
   <input type="submit" value="Poslať"  class="button">
