@@ -1,7 +1,8 @@
   :root {
-    --orange: #FFA500;
-    --black: black;
-    --blue: #ADD8E6;
+    --main: purple;
+    --button: orange;
+    --complementary: blue;
+    --questions: white;
   }
 
 
@@ -13,7 +14,7 @@
        float:left;
 }
     .button {
-  background-color: var(--orange); /* Oranžová */
+  background-color: var(--button);
   border: none;
   color: var(--black);
   padding: 15px 32px;
@@ -21,6 +22,12 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+.button:hover {
+        opacity: .5;
+}
+.a:hover {
+        opacity: .5;
 }
 
     .mLogo {
@@ -38,7 +45,7 @@
     /* The navbar container */
 .topnav {
   overflow: hidden;
-  background-color: var(--black);
+  background-color: var(--main);
 }
 
 /* Navbar links */
@@ -49,11 +56,6 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
 }
 .navDatum {
 border: 5px solid black;
@@ -104,7 +106,7 @@ padding: 5px;
 }
 
 .text {
-  background-color: var(--black);
+  background-color: var(--complementary);
   color: white;
   font-size: 16px;
   padding: 16px 32px;
@@ -120,7 +122,17 @@ padding: 5px;
     padding: 10px;
 }
 .otazky {
-    background: var(--orange);
+    background: var(--questions);
+}
+.Oblasť {
+       border-style: solid;
+       border-width: 2px;
+}
+.Departement {
+
+}
+.kategorie {
+    background-color: var(--main);
 }
 
 input[type=text], input[type=password], input[type=email] {
@@ -138,6 +150,39 @@ input[type=text], input[type=password], input[type=email] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+.comB {
+  background-color: var(--questions);
+    border-style: solid;
+    border-width: 2px;
+  color: var(--complementary);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.ComB:hover {
+opacity: .5;
+}
+.qMeno {
+     border-style: solid;
+     border-width: 2px;
+}
+.qQuestion {
+     border-style: solid;
+     border-width: 2px;
+}
+.qTime{
+     border-style: solid;
+     border-width: 2px;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: turquoise;
+  color: white;
 }
 
 }
