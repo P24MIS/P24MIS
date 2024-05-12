@@ -182,25 +182,25 @@ footer {
   text-align: center;
   padding: 3px;
   background-color: var(--main);
-  color: black;
+  color: white;
 }
 .mail:link {
-  background-color: black;
+  background-color: white;
   text-decoration: none;
 }
 
 .mail:visited {
-  background-color: black;
+  background-color: white;
   text-decoration: none;
 }
 
 .mail:hover {
-  background-color: black;
+  background-color: white;
   text-decoration: underline;
 }
 
 .mail:active {
-  background-color: black;
+  background-color: white;
   text-decoration: underline;
 }
 
