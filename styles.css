@@ -184,5 +184,24 @@ footer {
   background-color: var(--main);
   color: black;
 }
+.mail:link {
+  background-color: black;
+  text-decoration: none;
+}
+
+.mail:visited {
+  background-color: black;
+  text-decoration: none;
+}
+
+.mail:hover {
+  background-color: black;
+  text-decoration: underline;
+}
+
+.mail:active {
+  background-color: black;
+  text-decoration: underline;
+}
 
 }
